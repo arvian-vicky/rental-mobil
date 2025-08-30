@@ -52,25 +52,88 @@
     </div>
 
     {{-- 🔹 Footer --}}
-    <footer class="bg-dark text-white py-3 mt-5">
-        <div class="container text-center">
-            <p class="mb-2">&copy; {{ date('Y') }} Rental Mobil. All rights reserved.</p>
-            
-            {{-- Tombol WhatsApp --}}
-            <a href="https://wa.me/6281234567890" 
-               target="_blank" 
-               class="btn btn-success">
-                <i class="bi bi-whatsapp"></i> Chat via WhatsApp
-            </a>
-            
-            <div class="mt-2">
-                <small>
-                    <a href="{{ url('/contact') }}" class="text-white text-decoration-none">Hubungi Kami</a> | 
-                    <a href="{{ url('/about') }}" class="text-white text-decoration-none">Tentang</a>
-                </small>
+    <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+
+            {{-- Kolom 1: Logo & Info --}}
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <img src="https://indorent.co.id/web/assets/img/logo-indorent-white.png" alt="Logo Indorent" class="img-fluid mb-3" style="max-height: 50px;">
+                <p>
+                    <i class="bi bi-geo-alt-fill me-2"></i> Jalan Raya Karanggan No. 37, Gunung Putri, Bogor, Jawa Barat 16964
+                </p>
+                <p>
+                    <i class="bi bi-telephone-fill me-2"></i> (021) 87989000
+                </p>
+                <p>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="text-white text-decoration-none">
+                        <i class="bi bi-whatsapp me-2"></i> WhatsApp Customer Service
+                    </a>
+                </p>
+                <div class="d-flex justify-content-center justify-content-md-start align-items-center mt-4">
+                    <img src="https://indorent.co.id/web/assets/img/iso-9001.png" alt="ISO 9001" class="img-fluid me-3" style="max-height: 50px;">
+                    <img src="https://indorent.co.id/web/assets/img/ukas.png" alt="UKAS" class="img-fluid" style="max-height: 50px;">
+                </div>
+            </div>
+
+            {{-- Kolom 2: Kantor Pusat --}}
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold">Kantor Pusat</h5>
+                <p>
+                    <a href="#" class="text-white text-decoration-none">PT. Indoferensial Rent Car</a>
+                </p>
+            </div>
+
+            {{-- Kolom 3: Tentang Kami --}}
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold">Tentang Kami</h5>
+                <p>
+                    <a href="{{ url('/about') }}" class="text-white text-decoration-none">Profil Perusahaan</a>
+                </p>
+                <p>
+                    <a href="{{ url('/management') }}" class="text-white text-decoration-none">Manajemen</a>
+                </p>
+                <p>
+                    <a href="{{ url('/network') }}" class="text-white text-decoration-none">Jaringan Usaha</a>
+                </p>
+                <p>
+                    <a href="{{ url('/career') }}" class="text-white text-decoration-none">Karir</a>
+                </p>
+                <p>
+                    <a href="{{ url('/news') }}" class="text-white text-decoration-none">Berita</a>
+                </p>
+            </div>
+
+            {{-- Kolom 4: Layanan --}}
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold">Layanan</h5>
+                <p>
+                    <a href="{{ url('/services/car-rental') }}" class="text-white text-decoration-none">Sewa Mobil Bulanan</a>
+                </p>
+                <p>
+                    <a href="{{ url('/services/daily-rental') }}" class="text-white text-decoration-none">Sewa Mobil Harian</a>
+                </p>
+                <p>
+                    <a href="{{ url('/services/driver') }}" class="text-white text-decoration-none">Penyediaan Pengemudi</a>
+                </p>
+                <p>
+                    <a href="{{ url('/services/maintenance') }}" class="text-white text-decoration-none">Manajemen Perawatan</a>
+                </p>
             </div>
         </div>
-    </footer>
+        
+        <hr class="my-3">
+
+        {{-- Baris Copyright --}}
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p class="text-center text-md-start mb-0">
+                    &copy; 2025 Rental Mobil. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
     {{-- 🔹 Floating WhatsApp --}}
     <a href="https://api.whatsapp.com/send?phone=6285781879570&text=Halo%2C%20saya%20ingin%20booking%20mobil" 
        target="_blank" 
